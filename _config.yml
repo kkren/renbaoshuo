@@ -9,10 +9,13 @@ image:
   height: 200
   width: 200
 
+# 显示下载按钮
 show_downloads: false
 
+# 谷歌统计
 google_analytics: UA-163290903-7
 
+# Github 设置
 github: 
   is_project_page: false
 
@@ -20,13 +23,14 @@ github:
 plugins:
   - jekyll-sitemap
 
+# 友情链接
 links: 
   - name: "LiCEO"
     link: "https://lsc.moe/"
   - name: "Berd's Playground"
     link: "https://blog.berd.moe/"
 
-
+# 菜单栏
 menus: 
   - 0: 
     name: Home
@@ -38,16 +42,20 @@ menus:
     name: Others
     link: https://renbaoshuo.github.io
 
+# Twitter
 twitter:
   card: summary
   username: renbaoshuo
 
+# Facebook
 # facebook:
 #   admins: 
 
+# 站点验证
 webmaster_verifications:
   google: QPAs-WvnzBF_40NLGcMWRcWGLpEvskzSbo1oYv4P2uU
 
+# 社交信息
 social:
   name: Ren Baoshuo
   links:
