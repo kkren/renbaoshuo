@@ -10,41 +10,6 @@
 
 <p id="baoshuo-age" align="center" style="display: none;"></p>
 
-<script>
-/**
- * 
- * @param {int} year  
- * @param {int} month 
- * @param {int} date 
- * @link  https://github.com/renbaoshuo/baoyun-site
- */
-function getAgeInfo(year, month, date) {
-  var nowtime = new Date();
-  var nyear = nowtime.getUTCFullYear();
-  var nmonth = nowtime.getUTCMonth() + 1;
-  var nday = nowtime.getUTCDate();
-  var r = "";
-  if (nmonth == month) {
-    if (nday == date) {
-      r = `I'm&nbsp;<b>${nyear - year}</b>&nbsp;years&nbsp;old&nbsp;now.<br><b style="color: #dc143c;"><small>Today is my birthday!</small></b>`;
-    } else if (nday > date) {
-      r = `I'm&nbsp;<b>${nyear - year}</b>&nbsp;years&nbsp;old&nbsp;now.`;
-    } else if (nday < date) {
-      r = `I'm&nbsp;<b>${nyear - year - 1}</b>&nbsp;years&nbsp;old&nbsp;now.`;
-    }
-  } else if (nmonth > month) {
-    r = `I'm&nbsp;<b>${nyear - year}</b>&nbsp;years&nbsp;old&nbsp;now.`;
-  } else if (nmonth < month) {
-    r = `I'm&nbsp;<b>${nyear - year - 1}</b>&nbsp;years&nbsp;old&nbsp;now.`;
-  }
-  return r;
-}
-
-document.getElementById('baoshuo-age').innerHTML = getAgeInfo(2006, 06, 04);
-document.getElementById('baoshuo-age').style.display = 'block';
-
-</script>
-
 ### Github Stats
 
 <a href="https://github.com/renbaoshuo"><img src="https://github-readme-stats.vercel.app/api?username=renbaoshuo&show_icons=true&layout=compact&count_private=true&hide_title=true&theme=default" style="width: 58%; max-width: 58%; min-width: 58%;"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=renbaoshuo&layout=compact&count_private=true&theme=default" style="width: 40%; max-width: 40%; min-width: 40%;"></a>
